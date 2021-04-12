@@ -1,6 +1,6 @@
 
 class Book:
-    bookshelf = []  # a list to store all instances made from Book class
+    bookshelf = []  # a list used to store all instances made from Book class
 
     def __init__(self, title, publish_year, number_of_pages, language, price, *authors):
         self.title = title
