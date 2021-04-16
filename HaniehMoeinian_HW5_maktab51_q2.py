@@ -320,7 +320,7 @@ while True:
     elif task == '4':
         sorted_media = sort_items()
         for medium in sorted_media:
-            if isinstance(medium, Magazine):
+            if isinstance(medium, Magazine):  # medium.__class__.__name__
                 print(f"magazine, title:{medium.title}, progress:{medium.progress}%")
             elif isinstance(medium, Book):
                 print(f"book, title:{medium.title}, progress:{medium.progress}%")
